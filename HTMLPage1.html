@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Pomodoro Clock</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <header>
+            <div class="session">
+                <div class="breakCtrl">
+                    <p>Break :</p>
+                    <button class="minus" id="minusbreak">-</button><span id="bvalue" class="time ng-binding">5</span>
+                    <button class="plus" id="plusbreak">+</button>
+                </div>
+                <div class="sessionCtrl">
+                    <p>Work :</p>
+                    <button class="minus" id="minusLENGTH">-</button><span id="lvalue" class="time ng-binding">25</span>
+                    <button class="plus" id="plusLENGTH">+</button>
+                </div>
+            </div>
+        </header>
+        <section ng-click="toggleTimer()">
+            <div id="Pomodoro" class="timer">
+                <p id="Pomodorotxt" class="title">Click to start</p>
+                <p class="ng-binding">29</p><span id="fillid" class="fill"></span>
+            </div>
+            <br />
+            <p class="mtxt">A <a href="#">Pomodoro</a> Clock</p>
+        </section>
+       
+    </main>
+    <script src="javascript/JavaScript.js"></script>
+</body>
+</html>
